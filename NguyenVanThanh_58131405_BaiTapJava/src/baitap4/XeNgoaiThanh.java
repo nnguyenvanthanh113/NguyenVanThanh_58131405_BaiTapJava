@@ -10,18 +10,31 @@ package baitap4;
  * @author ThanhMickey
  */
 public class XeNgoaiThanh extends ChuyenXe{
-    String maSoChuyen,hoTenTaiXe,soXe,noiDen,soNgayDi,doanhThu;
+    String noiDen,soNgayDi;
 
     public XeNgoaiThanh() {
     }
 
-    public XeNgoaiThanh(String maSoChuyen, String hoTenTaiXe, String soXe, String noiDen, String soNgayDi, String doanhThu) {
-        this.maSoChuyen = maSoChuyen;
-        this.hoTenTaiXe = hoTenTaiXe;
-        this.soXe = soXe;
+    public XeNgoaiThanh(String noiDen, String soNgayDi, String maSoChuyen, String hoTenTaiXe, String soXe, Float doanhThu) {
+        super(maSoChuyen, hoTenTaiXe, soXe, doanhThu);
         this.noiDen = noiDen;
         this.soNgayDi = soNgayDi;
-        this.doanhThu = doanhThu;
+    }
+
+    public String getNoiDen() {
+        return noiDen;
+    }
+
+    public void setNoiDen(String noiDen) {
+        this.noiDen = noiDen;
+    }
+
+    public String getSoNgayDi() {
+        return soNgayDi;
+    }
+
+    public void setSoNgayDi(String soNgayDi) {
+        this.soNgayDi = soNgayDi;
     }
 
     public String getMaSoChuyen() {
@@ -48,29 +61,17 @@ public class XeNgoaiThanh extends ChuyenXe{
         this.soXe = soXe;
     }
 
-    public String getNoiDen() {
-        return noiDen;
-    }
-
-    public void setNoiDen(String noiDen) {
-        this.noiDen = noiDen;
-    }
-
-    public String getSoNgayDi() {
-        return soNgayDi;
-    }
-
-    public void setSoNgayDi(String soNgayDi) {
-        this.soNgayDi = soNgayDi;
-    }
-
-    public String getDoanhThu() {
+    public Float getDoanhThu() {
         return doanhThu;
     }
 
-    public void setDoanhThu(String doanhThu) {
+    public void setDoanhThu(Float doanhThu) {
         this.doanhThu = doanhThu;
     }
+
+   
+    
+    
     
     
 }

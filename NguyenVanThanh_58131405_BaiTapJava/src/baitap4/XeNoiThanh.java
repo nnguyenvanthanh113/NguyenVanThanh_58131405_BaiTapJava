@@ -10,18 +10,31 @@ package baitap4;
  * @author ThanhMickey
  */
 public class XeNoiThanh extends ChuyenXe{
-    String maSoChuyen,hoTenTaiXe,soXe,soTuyen,soKm,doanhThu;
+    String soTuyen,soKm;
 
     public XeNoiThanh() {
     }
 
-    public XeNoiThanh(String maSoChuyen, String hoTenTaiXe, String soXe, String soTuyen, String soKm, String doanhThu) {
-        this.maSoChuyen = maSoChuyen;
-        this.hoTenTaiXe = hoTenTaiXe;
-        this.soXe = soXe;
+    public XeNoiThanh(String soTuyen, String soKm, String maSoChuyen, String hoTenTaiXe, String soXe, Float doanhThu) {
+        super(maSoChuyen, hoTenTaiXe, soXe, doanhThu);
         this.soTuyen = soTuyen;
         this.soKm = soKm;
-        this.doanhThu = doanhThu;
+    }
+
+    public String getSoTuyen() {
+        return soTuyen;
+    }
+
+    public void setSoTuyen(String soTuyen) {
+        this.soTuyen = soTuyen;
+    }
+
+    public String getSoKm() {
+        return soKm;
+    }
+
+    public void setSoKm(String soKm) {
+        this.soKm = soKm;
     }
 
     public String getMaSoChuyen() {
@@ -48,28 +61,16 @@ public class XeNoiThanh extends ChuyenXe{
         this.soXe = soXe;
     }
 
-    public String getSoTuyen() {
-        return soTuyen;
-    }
-
-    public void setSoTuyen(String soTuyen) {
-        this.soTuyen = soTuyen;
-    }
-
-    public String getSoKm() {
-        return soKm;
-    }
-
-    public void setSoKm(String soKm) {
-        this.soKm = soKm;
-    }
-
-    public String getDoanhThu() {
+    public Float getDoanhThu() {
         return doanhThu;
     }
 
-    public void setDoanhThu(String doanhThu) {
+    public void setDoanhThu(Float doanhThu) {
         this.doanhThu = doanhThu;
     }
+
+    
+
+    
     
 }
